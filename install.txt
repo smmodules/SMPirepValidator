@@ -1,22 +1,20 @@
-SMPirepValidator v.1.3:
-========================
+/**
+ * SMPirepValidator v.1.3 for phpVMS (tested under PHP 7.4 and phpVMS v5.5.2.72 @ProAvia)
+ * @description This module aims to validate if the pilot made his flights online on the IVAO and VATSIM networks
+ *
+ * SmartModules addon module for phpVMS virtual airline system
+ * @link https://smartmodules.com.br
+ *
+ * SmartModules addon modules are licenced under the following license:
+ * Creative Commons Attribution Non-commercial Share Alike (by-nc-sa)
+ * To view full license text visit http://creativecommons.org/licenses/by-nc-sa/3.0/
+ *
+ * @author Ton Nascoli (SmartModules)
+ * @copyright Copyright (c) 2021, Ton Nascoli
+ * @license http://creativecommons.org/licenses/by-nc-sa/3.0/
+ */
 
-SMPirepValidator v.1.3 for phpVMS (tested under PHP 7.4 and phpVMS v5.5.2.72 @ProAvia)
-@description This module aims to validate if the pilot made his flights online on the IVAO and VATSIM networks
-
-SmartModules addon module for phpVMS virtual airline system
-@link https://smartmodules.com.br
-
-SmartModules addon modules are licenced under the following license:
-Creative Commons Attribution Non-commercial Share Alike (by-nc-sa)
-To view full license text visit http://creativecommons.org/licenses/by-nc-sa/3.0/
-
-@author Ton Nascoli (SmartModules)
-@copyright Copyright (c) 2021, Ton Nascoli
-@license http://creativecommons.org/licenses/by-nc-sa/3.0/
-
-
-#Install:
+Install:
 ========================
 1. Download the ZIP file in your computer
 2. Extract the zip file into a folder of your choice
@@ -45,9 +43,9 @@ to see the LOG of the flight performed at IVAO/VATSIM.
 
 ENJOY!!!!
 
-Note:
-========================
- 
+/**
+ * NOTE
+ */
 1. Tested under PHP 7.4 and phpVMS v5.5.2.72
 
 2. We made a litle bit change to the original code of the pirep_list.php file to allow
@@ -57,3 +55,4 @@ We have provided a backup of the original file in the bkp_original_file folder.
 
 3. This module is designed to take IVAO and VATSIM logs every 15 minutes and add them to 
 the sm_onlinelog table.
+

@@ -1,0 +1,33 @@
+CREATE TABLE sm_onlinelog2 (
+id INT ( 11 ) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+network VARCHAR ( 10 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+userId VARCHAR ( 10 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+sessionId VARCHAR ( 15 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+callsign VARCHAR ( 10 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+serverId VARCHAR ( 30 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+softwareTypeId VARCHAR ( 50 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+softwareVersion VARCHAR ( 20 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+sessioncreatedAt VARCHAR ( 14 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+depairport VARCHAR ( 4 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+arrairport VARCHAR ( 4 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+alternative VARCHAR ( 4 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+alternative2 VARCHAR ( 4 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+route text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+remarks text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+speed VARCHAR ( 10 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+level VARCHAR ( 10 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+flightRules VARCHAR ( 4 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+eet VARCHAR ( 4 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+endurance VARCHAR ( 4 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+peopleOnBoard VARCHAR ( 4 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+acftIcao VARCHAR ( 4 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+acftModel VARCHAR ( 50 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+simulatorId VARCHAR ( 10 )  CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)
+
+network, userId, sessionId, callsign, serverId, softwareTypeId, softwareVersion, sessioncreatedAt, depairport, arrairport, alternative, alternative2, route, remarks, speed, level, flightRules, eet, endurance, peopleOnBoard, acftIcao, acftModel, simulatorId, created_at
+
+$network, $userId, $sessionId, $callsign, $serverId, $softwareTypeId, $softwareVersion, $sessioncreatedAt, $depairport,
+$arrairport, $alternative, $alternative2, $route, $remarks, $speed, $level, $flightRules, $eet, $endurance, $peopleOnBoard,
+$acftIcao, $acftModel, $simulatorId, $created_at
